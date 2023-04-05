@@ -11,6 +11,7 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	return (actual_sqrt_recursion(n, 0));
+}
 /**
  * actual_sqrt_recursion - recursively finds the square root of a number
  * @n: number to find the square root of
@@ -24,6 +25,5 @@ int actual_sqrt_recursion(int n, int i)
 		return (-1);
 	if (i * i == n)
 		return (i);
-	else
-		return (actual_sqrt_recursion(n, i + 1));
+	return (actual_sqrt_recursion(n, i + 1));
 }
