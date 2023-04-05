@@ -6,12 +6,9 @@
  */
 void _print_rev_recursion(char *s)
 {
-	//base case
-	if (*s == '\0')
+	if (*s)
 	{
-		return;
+		_print_rev_recursion(s + 1);
+		putchar(*s);
 	}
-	
-	_print_rev_recursion(s + 1);
-	putchar(*s);
 }
