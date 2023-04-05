@@ -21,6 +21,7 @@ int is_prime_number(int n)
  *
  * Return: 1 if n is prime, 0 otherwise
  */
+int actual_prime(int n, int i)
 {
 	if (i * i > n)
 		return(1);
